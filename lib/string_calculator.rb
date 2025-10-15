@@ -1,5 +1,7 @@
 class StringCalculator
-  def add(input)
-    return 0 if input.empty?
+  def add(numbers)
+    0  # Hardcoded for empty string
+    return 0 if numbers.empty?
+    numbers.to_i
   end
 end
