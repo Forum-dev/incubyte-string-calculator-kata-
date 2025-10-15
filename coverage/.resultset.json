@@ -53,6 +53,7 @@
       "/home/vishwajit/Documents/foram-incubyte/incubyte-string-calculator-kata/lib/string_calculator.rb": {
         "lines": [
           1,
+          null,
           1,
           10,
           null,
@@ -63,29 +64,43 @@
           null,
           9,
           9,
-          25,
+          35,
           null,
           null,
           1,
           null,
-          1,
+          null,
           1,
           1,
           1,
           null,
+          1,
+          0,
           null,
           1,
-          9,
+          null,
+          null,
+          null,
+          2,
+          1,
+          null,
           null,
           null,
           1,
-          9,
+          44,
+          34,
+          null,
+          null,
+          null,
+          null,
+          1,
+          43,
           9,
           null,
           null
         ]
       }
     },
-    "timestamp": 1760552704
+    "timestamp": 1760552895
   }
 }
