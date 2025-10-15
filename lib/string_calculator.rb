@@ -7,6 +7,6 @@ class StringCalculator
   private
 
   def parse_numbers(numbers)
-    numbers.split(',').map(&:to_i)
+    numbers.gsub("\n", ",").split(',').map(&:to_i)
   end
 end
