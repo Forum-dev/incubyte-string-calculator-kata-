@@ -7,7 +7,9 @@ class StringCalculator
       delimiter, numbers = parse_custom_delimiter(numbers)
     end
 
-    parse_numbers(numbers, delimiter).reduce(0, :+)
+    nums = parse_numbers(numbers, delimiter)
+    check_negatives(nums)
+    nums.reject { |n| n > 1000 }.reduce(0, :+)
   end
 
   private
@@ -20,5 +22,10 @@ class StringCalculator
 
   def parse_numbers(numbers, delimiter = /[,|\n]/)
     numbers.split(delimiter).map(&:to_i)
+  end
+
+  def check_negatives(nums)
+    negatives = nums.select(&:negative?)
+    raise RuntimeError, "negative numbers not allowed #{negatives.join(',')}" if negatives.any?
   end
 end
