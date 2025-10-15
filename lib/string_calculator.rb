@@ -5,6 +5,7 @@ class StringCalculator
     delimiter = /[,|\n]/
     if numbers.start_with?('//')
       delimiter, numbers = parse_custom_delimiter(numbers)
+      delimiter = Regexp.new(Regexp.escape(delimiter))
     end
 
     nums = parse_numbers(numbers, delimiter)
